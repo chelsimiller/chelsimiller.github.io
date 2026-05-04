@@ -429,11 +429,19 @@
         <!-- Contact form — note: this form won't send emails on its own with GitHub Pages.
              To make it functional, sign up for a free service like Formspree.io
              and replace the button's onclick or wrap in a <form action="..."> -->
-        <div class="contact-form">
-          <input type="text" placeholder="Your name" />
-          <input type="email" placeholder="Your email" />
-          <textarea placeholder="Your message"></textarea>
-          <button class="btn">Send Message</button>
+        <form action="https://formspree.io/f/mzdorbbz" method="POST" class="contact-form">
+           <label>
+            Your email:
+            <input type="email" name="email" placeholder="Your name" required>
+           </label>
+           
+         <label>
+          Your message:
+          <textarea name="message"></textarea>
+         </label>
+         
+         <button type="submit" class="btn">Send</button>
+        </form>
         </div>
       </div>
     </div>
